@@ -1,13 +1,13 @@
-// import $ from 'jquery';
-// import 'select2';
+import $ from 'jquery';
+import 'select2';
 
-// import { loadDynamicBannerText } from './components/type';
-// import 'select2/dist/css/select2.css';
+import { loadDynamicBannerText } from './components/type';
+import 'select2/dist/css/select2.css';
 
 
-// const initSelect2 = () => {
-//   $('.select2').select2();
-// };
+const initSelect2 = () => {
+  $('.select2').select2();
+};
 
 
 // const input = document.querySelector('#search')
@@ -24,6 +24,6 @@
 // })
 
 
-// initSelect2();
-// loadDynamicBannerText();
+initSelect2();
+loadDynamicBannerText();
 
