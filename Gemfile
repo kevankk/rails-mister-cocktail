@@ -34,10 +34,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
-gem "select2-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem "select2-rails"
+gem 'select2_simple_form', github: 'lndl/select2_simple_form', tag: '0.7.3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

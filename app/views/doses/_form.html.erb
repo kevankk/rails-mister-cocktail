@@ -1,7 +1,8 @@
 <h1>Add a new ingredient to <%= @cocktail.name %></h1>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.association :ingredient, collection: Ingredient.all, label: 'Choose a ingredient:' %>
+  <%= f.association :ingredient, collection: Ingredient.all, label: 'Choose a ingredient', input_html: { class: 'select2' }
+ %>
   <%= f.input :description , label: 'Amount:' %>
-  <%= f.button :submit, 'Add Ingredient!' %>
+  <%= f.button :submit, 'Add Ingredient!' , class: 'btn btn-dark'   %>
 <% end %>

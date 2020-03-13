@@ -2,7 +2,43 @@ label.string {
   font-size: 24px;
 }
 
-#cocktail_name {
-  width: 50%;
+.form-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cocktail_name {
+  text-align: center;
+}
+
+.link-to {
+  margin-top: 70px;
+}
+
+.list-item {
+  text-align: left;
+  width: 30%;
   margin: 0 auto;
+}
+
+.delete {
+  float: right;
+  bottom: 0;
+}
+
+.delete-cocktail {
+  font-size: 30px;
+  color: navy;
+  float:right;
+  margin: auto 0;
+}
+
+.delete-cocktail:hover {
+  color: rgba(0,0,0, 0.7);
+}
+
+.back-to-all {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
