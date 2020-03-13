@@ -7,8 +7,9 @@
     <% end %>
   </li>
   <%= link_to "Delete Ingredient", dose_path, method: :delete, data: { confirm: "Are you sure?" }   %>
-  <br>
 <% end %>
+</ul>
 <p><%= link_to "Add a new ingredient", new_cocktail_dose_path(@cocktail)  %></p>
-<p> <%= link_to "Delete Cocktail", cocktail_path, method: :delete, data: { confirm: "Are you sure?" }   %> </p>
+
+<p> <%= link_to "Delete Cocktail", @cocktail, method: :delete  %> </p>
 <p> <%= link_to "Back to all", cocktails_path %> </p>
