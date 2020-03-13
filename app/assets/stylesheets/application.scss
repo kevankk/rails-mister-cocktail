@@ -11,3 +11,20 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/banner";
+@import "cocktails";
+@import "components/form";
+@import "components/navbar";
+@import "components/searchbar";
+@import "components/background";
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2|Pacifico&display=swap');
+
+body {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+

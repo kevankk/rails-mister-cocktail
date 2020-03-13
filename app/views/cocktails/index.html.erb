@@ -1,0 +1,36 @@
+<div class="navbar-mine">
+  <div class="container">
+    <h1>Mister Cocktail <i class="fas fa-cocktail"></i></h1>
+
+  </div>
+</div>
+
+
+<div class="banner">
+  <h2>Welcome to Mister Cocktail!</h2>
+  <h3 class='mt-5'>Search for a cocktail to get started!</h3>
+  <div class="search-div mt-4">
+  <div class="search-bar">
+    <input id="search" class="form-control" type="text">
+    <button class='search-button'><i class="fas fa-search"></i></button>
+  </div>
+  </div>
+  <%= link_to "Or add a new Cocktail", new_cocktail_path, class: "add btn btn-dark mt-5" %>
+</div>
+
+<div class="background">
+  <div class="container">
+      <div class="row justify-content-center">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-12 col-md-6 col-lg-4 card-container">
+      <div class="card mb-4">
+        <img class="card-img-top" src=<%=  "https://source.unsplash.com/featured/?#{cocktail.name}, cocktail/1600x900" %>>
+          <div class="card-body">
+          <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail)%></h5>
+          </div>
+      </div>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</div>
