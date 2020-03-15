@@ -1,14 +1,11 @@
-import $ from 'jquery';
-import 'select2';
+
+import 'select2/dist/css/select2.css';
+import { initSelect2 } from './components/init_select2';
 
 import { loadDynamicBannerText } from './components/type';
-import 'select2/dist/css/select2.css';
 
-
-const initSelect2 = () => {
-  $('.select2').select2();
-};
-
+initSelect2();
+loadDynamicBannerText();
 
 const input = document.querySelector('#search')
 input.addEventListener('keyup', (e) => {
@@ -22,8 +19,3 @@ input.addEventListener('keyup', (e) => {
     }
 })
 })
-
-
-initSelect2();
-loadDynamicBannerText();
-
